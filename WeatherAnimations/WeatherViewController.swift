@@ -98,24 +98,20 @@ class WeatherViewController: UIViewController {
         
         UIView.animateKeyframes(withDuration: 20, delay: 0, options: [.repeat, .allowUserInteraction], animations: {
             
-            UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.2, animations: {
+            UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.25, animations: {
                 view.backgroundColor = .cyan
-                self.view.layoutIfNeeded()
             })
             
-            UIView.addKeyframe(withRelativeStartTime: 9/20, relativeDuration: 0.2, animations: {
+            UIView.addKeyframe(withRelativeStartTime: 0.25, relativeDuration: 0.25, animations: {
                 view.backgroundColor = .blue
-                self.view.layoutIfNeeded()
             })
             
-            UIView.addKeyframe(withRelativeStartTime: 11/20, relativeDuration: 0.2, animations: {
+            UIView.addKeyframe(withRelativeStartTime: 0.50, relativeDuration: 0.25, animations: {
                 view.backgroundColor = .black
-                self.view.layoutIfNeeded()
             })
             
-            UIView.addKeyframe(withRelativeStartTime: 0.9, relativeDuration: 0.1, animations: {
+            UIView.addKeyframe(withRelativeStartTime: 0.75, relativeDuration: 0.25, animations: {
                 view.backgroundColor = .blue
-                self.view.layoutIfNeeded()
             })
             
             
@@ -126,7 +122,7 @@ class WeatherViewController: UIViewController {
 
         UIView.animateKeyframes(withDuration: 20, delay: 0, options: [.repeat, .calculationModeCubic, .allowUserInteraction], animations: {
            
-            UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.2, animations: {
+            UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.25, animations: {
                 self.sunCenterX.isActive = false
                 self.sunCenterY.isActive = false
                 self.sunCenterX = self.sun.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
@@ -136,7 +132,7 @@ class WeatherViewController: UIViewController {
                 self.view.layoutIfNeeded()
             })
             
-            UIView.addKeyframe(withRelativeStartTime: 0.2, relativeDuration: 0.2, animations: {
+            UIView.addKeyframe(withRelativeStartTime: 0.25, relativeDuration: 0.25, animations: {
                 self.sunCenterX.isActive = false
                 self.sunCenterY.isActive = false
                 self.sunCenterX = self.sun.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: self.screenSize.width * -0.75)
@@ -153,7 +149,7 @@ class WeatherViewController: UIViewController {
         
         UIView.animateKeyframes(withDuration: 20, delay: 0, options: [.repeat, .calculationModeCubic, .allowUserInteraction], animations: {
             
-            UIView.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: 0.2, animations: {
+            UIView.addKeyframe(withRelativeStartTime: 0.50, relativeDuration: 0.25, animations: {
                 self.moonCenterX.isActive = false
                 self.moonCenterY.isActive = false
                 self.moonCenterX = self.moon.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
@@ -163,7 +159,7 @@ class WeatherViewController: UIViewController {
                 self.view.layoutIfNeeded()
             })
             
-            UIView.addKeyframe(withRelativeStartTime: 0.7, relativeDuration: 0.2, animations: {
+            UIView.addKeyframe(withRelativeStartTime: 0.75, relativeDuration: 0.25, animations: {
                 self.moonCenterX.isActive = false
                 self.moonCenterY.isActive = false
                 self.moonCenterX = self.moon.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: self.screenSize.width * -0.75)
